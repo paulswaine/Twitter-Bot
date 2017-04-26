@@ -51,7 +51,7 @@ var T = new Twit({
 //T.post('statuses/update', tweet, gotData);
 
 //POST TWEET
-//tweetIt();
+tweetIt();
 
 //setInterval(tweetIt, 1000*45);
 
