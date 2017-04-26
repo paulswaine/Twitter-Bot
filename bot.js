@@ -80,53 +80,53 @@ function tweetIt() {
 
 }
 
-followTweet();
-
-function followTweet() {
-    var stream = T.stream('user');
-
-    stream.on('follow', followed);
-
-    function followed(eventMsg) {
-        var name = eventMsg.source.name;
-        var screenName = eventMsg.source.screen_name;
-        tweetIt2('@' + screenName + ' how do you do?');
-
-        var fs = require('fs');
-        console.log('finished tweet json');
-        var json = JSON.stringify(eventMsg, null, 2);
-        fs.writeFile("tweet.json", json);
-        
-    }
-
-}
-
-function tweetIt2(txt) {
-    var tweet = {
-        status: txt
-
-
-
-    }
-
-    T.post('statuses/update', tweet, tweeted);
-
-    function tweeted(err, data, response) {
-        if(err) {
-            console.log("Something went wrong!");
-        } else {
-            console.log("You were followed");
-        }
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
+////followTweet();
+//
+////function followTweet() {
+////    var stream = T.stream('user');
+//
+////    stream.on('follow', followed);
+//
+//    function followed(eventMsg) {
+//        var name = eventMsg.source.name;
+//        var screenName = eventMsg.source.screen_name;
+//        tweetIt2('@' + screenName + ' how do you do?');
+//
+//        var fs = require('fs');
+//        console.log('finished tweet json');
+//        var json = JSON.stringify(eventMsg, null, 2);
+//        fs.writeFile("tweet.json", json);
+//        
+//    }
+//
+//}
+//
+//function tweetIt2(txt) {
+//    var tweet = {
+//        status: txt
+//
+//
+//
+//    }
+//
+//    T.post('statuses/update', tweet, tweeted);
+//
+//    function tweeted(err, data, response) {
+//        if(err) {
+//            console.log("Something went wrong!");
+//        } else {
+//            console.log("You were followed");
+//        }
+//    }
+//
+//
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
