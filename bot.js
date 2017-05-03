@@ -123,7 +123,7 @@ function tweetIt() {
 //}
 
 var fs = require('fs');
-//processing();
+processing();
 
 function processing(){
     console.log("uploaded image");
