@@ -127,7 +127,7 @@ processing();
 
 function processing(){
     console.log("uploaded image");
-    var r = 2;
+    var r = 3;
     var filename = 'pictures/image' + r + '.jpg';
     
     var parameters = {
