@@ -123,13 +123,15 @@ function tweetIt() {
 //}
 
 var fs = require('fs');
-processing();
+//processing();
+setInterval(processing, 1000*60*60);
+
 
 function processing(){
     console.log("uploaded image");
-    var r = Math.floor(Math.random() * 6);
-    if (r = 6) {
-        r = Math.floor(Math.random() * 5);
+    var r = Math.floor(Math.random() * 11);
+    if (r = 11) {
+        r = Math.floor(Math.random() * 10);
     }
     if (r = 0) {
         r = 3;
