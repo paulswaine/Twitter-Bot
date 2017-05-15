@@ -127,9 +127,15 @@ processing();
 
 function processing(){
     console.log("uploaded image");
-    var r = 4;
+    var r = Math.floor(Math.random() * 6);
+    if (r = 6) {
+        r = Math.floor(Math.random() * 5);
+    }
+    if (r = 0) {
+        r = 3;
+    }
     var filename = 'pictures/image' + r + '.jpg';
-    
+    console.log(filename);
     var parameters = {
         encoding: 'base64'
         
